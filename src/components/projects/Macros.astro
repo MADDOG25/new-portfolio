@@ -1,0 +1,20 @@
+---
+import { Image } from 'astro:assets';
+import macros from '../../assets/xmacros.png'
+---
+
+<div>
+  <Image
+    class="project-image border  border-black"
+    src={macros}
+    alt="screen shot of python scripts running in the terminal"
+    densities={[1, 2, 3]} 
+  />
+</div>
+
+<style>
+  .project-image {
+    width: 100%;
+    height: auto;
+  }
+</style>

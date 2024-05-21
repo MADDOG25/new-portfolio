@@ -1,0 +1,20 @@
+---
+import { Image } from 'astro:assets';
+import leftthematrix from '../../assets/leftthematrix.png'
+---
+
+<div>
+  <Image
+    class="project-image border  border-black"
+    src={leftthematrix}
+    alt="screen shot of python scripts running in the terminal"
+    densities={[1, 2, 3]} 
+  />
+</div>
+
+<style>
+  .project-image {
+    width: 100%;
+    height: auto;
+  }
+</style>
