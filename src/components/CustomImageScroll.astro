@@ -1,92 +1,88 @@
 ---
 import { Image } from "astro:assets";
 
-import thumb from "../assets/python2.png";
 import thumb1 from "../assets/leftthematrix.png";
-import thumb2 from "../assets/weatherapp.png";
-import thumb3 from "../assets/xmacros.png";
-import thumb4 from "../assets/cutdate.png";
+import thumb2 from "../assets/cutdate.png";
+import thumb3 from "../assets/nexgendigital.png";
 
 const cards = [
   {
     title: "Left The Matrix",
-    imagealt: "13 Python Scripts I Use thumbnail",
+    imagealt: "Left The Matrix",
     image: thumb1,
-    href: "https://www.youtube.com/watch?v=R2KZsakOS8c",
-  },
-  {
-    title: "Weather App",
-    imagealt: "13 Python Scripts I Use thumbnail",
-    image: thumb2,
-    href: "https://www.youtube.com/watch?v=R2KZsakOS8c",
-  },
-  {
-    title: "X Macros",
-    imagealt: "13 Python Scripts I Use thumbnail",
-    image: thumb3,
-    href: "https://www.youtube.com/watch?v=R2KZsakOS8c",
+    href: "https://left-the-matrix.netlify.app/",
   },
   {
     title: "CutDate",
-    imagealt: "13 Python Scripts I Use thumbnail",
-    image: thumb4,
-    href: "https://www.youtube.com/watch?v=R2KZsakOS8c",
+    imagealt: "CutDate",
+    image: thumb2,
+    href: "https://cutdate.netlify.app/",
+  },
+  {
+    title: "NexGen Digital",
+    imagealt: "NexGen Digital",
+    image: thumb3,
+    href: "https://nexgendigital.vercel.app/",
   },
   {
     title: "Left The Matrix",
-    imagealt: "13 Python Scripts I Use thumbnail",
+    imagealt: "Left The Matrix",
     image: thumb1,
-    href: "https://www.youtube.com/watch?v=R2KZsakOS8c",
-  },
-  {
-    title: "Weather App",
-    imagealt: "13 Python Scripts I Use thumbnail",
-    image: thumb2,
-    href: "https://www.youtube.com/watch?v=R2KZsakOS8c",
-  },
-  {
-    title: "X Macros",
-    imagealt: "13 Python Scripts I Use thumbnail",
-    image: thumb3,
-    href: "https://www.youtube.com/watch?v=R2KZsakOS8c",
+    href: "https://left-the-matrix.netlify.app/",
   },
   {
     title: "CutDate",
-    imagealt: "13 Python Scripts I Use thumbnail",
-    image: thumb4,
-    href: "https://www.youtube.com/watch?v=R2KZsakOS8c",
+    imagealt: "CutDate",
+    image: thumb2,
+    href: "https://cutdate.netlify.app/",
+  },
+  {
+    title: "NexGen Digital",
+    imagealt: "NexGen Digital",
+    image: thumb3,
+    href: "https://nexgendigital.vercel.app/",
   },
   {
     title: "Left The Matrix",
-    imagealt: "13 Python Scripts I Use thumbnail",
+    imagealt: "Left The Matrix",
     image: thumb1,
-    href: "https://www.youtube.com/watch?v=R2KZsakOS8c",
-  },
-  {
-    title: "Weather App",
-    imagealt: "13 Python Scripts I Use thumbnail",
-    image: thumb2,
-    href: "https://www.youtube.com/watch?v=R2KZsakOS8c",
-  },
-  {
-    title: "X Macros",
-    imagealt: "13 Python Scripts I Use thumbnail",
-    image: thumb3,
-    href: "https://www.youtube.com/watch?v=R2KZsakOS8c",
+    href: "https://left-the-matrix.netlify.app/",
   },
   {
     title: "CutDate",
-    imagealt: "13 Python Scripts I Use thumbnail",
-    image: thumb4,
-    href: "https://www.youtube.com/watch?v=R2KZsakOS8c",
+    imagealt: "CutDate",
+    image: thumb2,
+    href: "https://cutdate.netlify.app/",
+  },
+  {
+    title: "NexGen Digital",
+    imagealt: "NexGen Digital",
+    image: thumb3,
+    href: "https://nexgendigital.vercel.app/",
+  },
+  {
+    title: "Left The Matrix",
+    imagealt: "Left The Matrix",
+    image: thumb1,
+    href: "https://left-the-matrix.netlify.app/",
+  },
+  {
+    title: "CutDate",
+    imagealt: "CutDate",
+    image: thumb2,
+    href: "https://cutdate.netlify.app/",
+  },
+  {
+    title: "NexGen Digital",
+    imagealt: "NexGen Digital",
+    image: thumb3,
+    href: "https://nexgendigital.vercel.app/",
   },
 ];
 ---
 
 <div class="flex my-4 items-center justify-center">
   <div class="relative w-full overflow-hidden">
-    <!-- For some reason the white vignette effect don't work in this sandbox but if you uncomment the following lines in VSCode, they should work -->
-
     <div class="block">
       <div
         class="pointer-events-none absolute -top-1 z-10 h-20 w-full bg-gradient-to-b from-zinc-950 to-transparent"
@@ -110,7 +106,6 @@ const cards = [
       id="scroller"
       class="mx-auto grid h-[450px] w-[300px] animate-skew-scroll grid-cols-1 gap-5 sm:w-[750px] sm:grid-cols-2"
     >
-      <!-- These are all the same components - if you're using React, you can use a map to iterate through all of them -->
       {
         cards.map((card) => (
           <a

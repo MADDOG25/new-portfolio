@@ -6,11 +6,16 @@ import Heading from "../components/Heading.astro";
 import CustomImageScroll from "../components/CustomImageScroll.astro";
 import CTA from "../components/CTA.astro";
 import Contact from "../components/Contact.astro";
+import BackButton from "../components/BackButton.astro"
 
 //Professional Work Components
-import Anaren from "../components/Anaren.astro";
+// import Anaren from "../components/Anaren.astro";
+import NexGen from "../components/projects/NexGen.astro";
+import LeftTheMatrix from "../components/projects/LeftTheMatrix.astro";
+import CutDate from "../components/projects/CutDate.astro";
 //Project Components
-import Python from "../components/Python.astro";
+import Weather from "../components/projects/Weather.astro";
+import Macros from "../components/projects/Macros.astro";
 ---
 
 <Layout title="Portfolio DevJeffrey Desarrollador Frontend">
@@ -22,9 +27,9 @@ import Python from "../components/Python.astro";
           class="mt-4 text-lg text-zinc-500 dark:text-zinc-400 font-light lg:text-xl"
         >
         Creo proyectos y contenidos atractivos en Internet, a partir de mi
-        Experiencia en desarrollo web freelance. Mi trabajo abarca varios
-        clientes, desde particulares y startups. Si usted
-        Cree que puedo contribuir a su negocio, no dude en <a
+        Experiencia en Desarrollo Web Freelance.<br/>Mi trabajo abarca varios
+        clientes, desde emprendedores y startups.<br/>Si usted
+        cree que puedo contribuir a su negocio, no dude en <a
             href="#contact"
             class="underline text-gray-300">contáctarme</a
           >.
@@ -38,10 +43,10 @@ import Python from "../components/Python.astro";
         </h2>
         <p class="mt-4 text-lg text-zinc-500 dark:text-zinc-400">
           Yo creo <a
-            href="https://www.youtube.com/@shadowstack"
+            href="https://www.youtube.com/@DevJeffreyFrontendMindset"
             target="_blank"
-            class="underline text-gray-300">YouTube</a
-          > videos de Desarrollo Frontend, incluyendo proyectos que estoy trabajando actualmente.
+            class="underline text-gray-300">Contenido</a
+          > de Desarrollo Frontend, incluyendo proyectos que estoy trabajando actualmente.
         </p>
         <CustomImageScroll />
       </div>
@@ -54,37 +59,37 @@ import Python from "../components/Python.astro";
       <div class="mx-auto grid grid-cols-1 md:grid-cols-3 gap-4">
         <div class="">
           <Card
-            href="anaren"
-            title="Anaren.com"
-            body="A Drupal website for the space and defense company, featuring pages for their different divisions and product lines. It also includes extensive DataTables integration for their product catalog."
-            tags="Drupal, PHP, JavaScript, CSS, HTML"
+            href="https://nexgendigital.vercel.app/"
+            title="NexGen Digital"
+            body="Landing Page de Servicios Profesionales de Creación de Páginas Web"
+            tags="Astro, Tailwind CSS, Vercel"
           >
             <div class="max-w-full">
-              <Anaren />
+              <NexGen />
             </div>
           </Card>
         </div>
         <div class="">
           <Card
-            href="anaren"
-            title="Anaren.com"
-            body="A Drupal website for the space and defense company, featuring pages for their different divisions and product lines. It also includes extensive DataTables integration for their product catalog."
-            tags="Drupal, PHP, JavaScript, CSS, HTML"
+            href="https://left-the-matrix.netlify.app/"
+            title="Left The Matrix"
+            body="Sitio Web con recursos para Mejorar Hábitos y el Desarrollo Personal."
+            tags="HTML, CSS, JavaScript, Netlify"
           >
             <div class="max-w-full">
-              <Anaren />
+              <LeftTheMatrix />
             </div>
           </Card>
         </div>
         <div class="">
           <Card
-            href="anaren"
-            title="Anaren.com"
-            body="A Drupal website for the space and defense company, featuring pages for their different divisions and product lines. It also includes extensive DataTables integration for their product catalog."
-            tags="Drupal, PHP, JavaScript, CSS, HTML"
+            href="https://cutdate.netlify.app/"
+            title="CutDate"
+            body="Landing Page que muestra información de un Servicio de Barbería."
+            tags="React, Tailwind CSS, Netlify"
           >
             <div class="max-w-full">
-              <Anaren />
+              <CutDate />
             </div>
           </Card>
         </div>
@@ -100,37 +105,30 @@ import Python from "../components/Python.astro";
       <div class="mx-auto grid grid-cols-1 md:grid-cols-3 gap-4">
         <div class="">
           <Card
-            title="Misc Python Apps"
-            body="Miscellaneous Python applications and scripts I've made to help me learn Python and to use as productivity tools or save me time."
-            tags="Python"
-            github="https://github.com/leabs/misc-python-apps"
+            title="Weather App"
+            body="App web del Clima utilizando API´s y herramientas como Axios."
+            tags="React, Tailwind CSS"
+            github="https://github.com/MADDOG25/weather-app"
           >
-            <Python />
+            <Weather />
           </Card>
         </div>
         <div class="">
           <Card
-            title="Misc Python Apps"
-            body="Miscellaneous Python applications and scripts I've made to help me learn Python and to use as productivity tools or save me time."
-            tags="Python"
-            github="https://github.com/leabs/misc-python-apps"
+            title="X Macros"
+            body="App Web que calcula los macronutrientes como proteína, carbohídratos y grasas. Calcula cuanto debes de comer para aumentar o disminuir tu peso."
+            tags="React, Tailwind CSS, TypeScript"
+            github="https://github.com/MADDOG25/x-macros"
           >
-            <Python />
-          </Card>
-        </div>
-        <div class="">
-          <Card
-            title="Misc Python Apps"
-            body="Miscellaneous Python applications and scripts I've made to help me learn Python and to use as productivity tools or save me time."
-            tags="Python"
-            github="https://github.com/leabs/misc-python-apps"
-          >
-            <Python />
+            <Macros />
           </Card>
         </div>
       </div>
       <div class="my-8">
         <Contact />
+      </div>
+      <div class="my-8 mx-auto flex justify-center items-center">
+        <BackButton />
       </div>
     </main>
   </div>
